@@ -129,10 +129,9 @@ footer .join a i
     position: absolute;
     top: 0px;
     left: 0px;
-    margin-left: -1rem;
-    padding-left: 5px;
-    border-radius: 10px;
-    background-color: red;
+    margin-left: -3.5rem;
+    padding-left: 7.5px;
+    border-radius: none;
 
 }
 }
