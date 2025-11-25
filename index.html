@@ -7,27 +7,34 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<!-- police  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><!--policy-->
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- le header -->
     <header>
         <div class="row contact-informations">
-            <div class="col d-flex flex-direction-row justify-content-center">
+            <div class="col d-flex flex-column flex-md-row flex-lg-row justify-content-center align-items-center">
                 <p><span><i class="bi bi-telephone"></i> : </span><span>  +243 897 401 210</span></p>
                 <p class="ms-2"><span><i class="bi bi-envelope-at-fill"></i> : </span><span>automatecenter@info.com</span></p>
             </div>
         </div>
     </header>
     <!-- la navbar-->
-<nav class="navbar  d-flex justify-content-end navbar-expand-lg ">
+<nav class="navbar   d-flex justify-content-end navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">Automate center</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav-links">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                 </li>
@@ -48,100 +55,65 @@
 <!--la carouselle -->
 
 <div id="carouselExampleCaptions" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-
+  <div class="carousel-inner " style="height: 75vh;">
+    <div class="carousel-item active " >
+      <!-- <img src="Pictures/robotique image.jpg" class="d-block w-100 " alt="not found"> -->
+      <div class="carousel-caption">
+        <h1>Bienvenu chez automate center</h1> 
+        <p>Nous accompagnons les organisations dans la mise en place de solutions numériques fiables, accessibles et innovantes.
+        <p>Nous sommes specialises dans l'automatisation, le developpement de logiciel, la maintenance informatique et bien plus
+<br>Simplifiez votre quotidien.</p>
+        <p><a href="#" class="btn btn-primary mt-0" style="color: white;">Demander un avis</a></p>
+      </div>
+      <!-- formulaire de l'avis -->
+<section class="formular">
+      <div class="container my-5" >
+  <div class="row  justify-content-center" >
+    <div class="col-md-6">
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <h4 class="card-title text-center mb-3">Donnez votre avis !</h4>
+          <p class="text-center text-muted mb-4">Votre opinion compte pour nous 😊</p>
+          <form id="avisForm">
+            <div class="mb-3">
+              <label for="nom" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+            </div>
+            <div class="mb-3">
+              <label for="avis" class="form-label">Votre avis</label>
+              <textarea class="form-control" id="avis" rows="4" placeholder="Écrivez votre avis..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-  <div class="carousel-inner mt-2">
-    <div class="carousel-item active">
-      <img src="Pictures/robotique image.jpg" class="d-block w-100 " alt="not found">
-      <div class="carousel-caption ">
-        <h1>Bienvenu chez automate center </h1>
-        <p>Nous accompagnons les organisations(écoles, hopitaux, les particuliers etc ) dans la mise en place de solutions numériques fiables, accessibles et innovantes.
-De la gestion informatique aux outils Microsoft 365, nous vous aidons à automatiser, sécuriser et optimiser votre environnement digital.
-Simplifiez votre quotidien. Boostez votre productivité
-<br>👉 Votre satisfaction est notre priorité !</p>
-        <p><a href="#" class="btn btn-primary">Nos services</a></p>
+</section>
+      <!-- end of form -->
+      <div class="image-section">
+        <img src="Pictures/main cloud image.png" alt="not found" width="500px" height="600px">
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="Pictures/Ms cloud.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption ">
-        <h1>Service de cloud</h1>
-        <p>
-            Libérez le potentiel de votre entreprise avec nos solutions Cloud flexibles et sécurisées. Notre service Cloud vous permet de : <br>
-            - Stockage sécurisé et accessible : Vos données sont protégées et accessibles depuis n’importe quel appareil, à tout moment. <br>
-            - Collaboration simplifiée : Travaillez en équipe en temps réel grâce à des outils de partage et de co-édition performants. <br>
-            - Évolutivité instantanée : Adaptez facilement vos ressources selon vos besoins, sans contraintes matérielles. <br>
-            - Sauvegarde et continuité : Assurez la protection de vos données et la continuité de vos activités en cas d’incidents. <br>
-        </p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="Pictures/developpement de solution logiciel.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>développement des solutions logiciel</h1>
-        <p>Transformez vos idées en applications performantes grâce à nos solutions logicielles sur mesure. Nous concevons des logiciels adaptés à vos besoins pour : <br>
-            - Optimiser vos processus : Automatisation des tâches répétitives et gain de temps pour votre équipe. <br>
-            - Applications sur mesure : Logiciels adaptés à votre secteur et à vos objectifs spécifiques. <br>
-            - Expérience utilisateur intuitive : Des interfaces claires et faciles à utiliser pour maximiser l’efficacité. <br>
-            - Intégration fluide : Connexion avec vos systèmes existants pour un fonctionnement harmonieux. <br>
-            - Support et maintenance : Assistance continue et mises à jour pour garantir la fiabilité de vos logiciels. <br>
-</p>
-      </div>
-      </div>
-      <div class="carousel-item">
-      <img src="Pictures/bureautique.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>la Bureautique</h1>
-        <p>Boostez la productivité de votre entreprise avec nos solutions bureautiques complètes et performantes. Nous vous offrons : <br>
-        - Outils de collaboration efficaces : Partage de documents, co-édition et communication simplifiée pour vos équipes. <br>
-        - Gestion centralisée des fichiers : Accédez et organisez vos documents en toute sécurité depuis n’importe quel appareil. <br>
-        - Automatisation des tâches répétitives : Gagnez du temps grâce à des modèles, macros et workflows intelligents. <br>
-        - Formation et support : Accompagnement personnalisé pour que vos équipes maîtrisent rapidement les outils. <br>
-        - Sécurité et conformité : Vos données sont protégées grâce à des standards de sécurité professionnels.
-</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="Pictures/maintenance et support informatique.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>le service de maintenance et  support informatique(IT support)</h1>
-        <p>Assurez la continuité et la performance de votre infrastructure informatique grâce à notre service de support et maintenance. Nous vous proposons : <br>
-- Assistance technique rapide : Résolution efficace de vos problèmes matériels et logiciels. <br>
-- Maintenance préventive : Vérifications régulières pour éviter les pannes et optimiser vos systèmes. <br>
-- Mises à jour et sécurité : Installation des dernières mises à jour et protection contre les menaces informatiques. <br>
-- Gestion de réseau et équipements : Surveillance et optimisation de vos serveurs, postes de travail et périphériques. <br>
-- Support personnalisé : Conseils et accompagnement adaptés à vos besoins spécifi</p>
-      </div>
-    </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    
 </div>
 </div>
-    <div class="row mb-5">
+    <div class="row mb-5" style="margin-top: 2rem;">
         <div class="container text-dark text-center w-50">
             <h2><b>Nos services</b></h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore ab vel voluptatem aliquid mollitia facere dolore odit modi aliquam blanditiis assumenda, 
+            <span>Des solutions adaptées a vos besoins pour vous simplifier la vie et booster votre performance</span> 
         </div>
     </div>
 <!-- fin de la sous section -->
     <div class="container ">
-	<div class="row">
-        <div class="col-12 col-md-6 col-lg-4 " >
-	    <div class="card" style="width: 20rem; background-color: #09143A;color:white;">
+	<div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3 " >
+	    <div class="card h-100" style="width: 20rem; background-color:#a0c9f4a7;color:#333333;">
             <img src="Pictures/maintenance.png" class="card-img-top" alt="not found">
             <div class="card-body">
                 <h5 class="card-title">Maitenance et dépanage informatique</h5>
@@ -152,13 +124,12 @@ Simplifiez votre quotidien. Boostez votre productivité
                     <span>✔ Mise à jour et optimisation des systèmes</span>
     Notre objectif : garantir la performance et la sécurité de vos outils informatiques, tout en prolongeant leur durée de vie.
                 </p>
-                <a href="#" class="btn" style="background-color: rgb(100,236,9);color: white;">Plus d'infos</a>
             </div>
 	   </div>
         </div>
          <!---->
-                <div class="col-12 col-md-6 col-lg-4">
-		<div class="card" style="width: 20rem;  background-color: #09143A; color:white;">
+                <div class="col-12 col-md-6 col-lg-3">
+		<div class="card h-100" style="width: 20rem; background-color:#a0c9f4a7;color:#333333;"">
   <img src="Pictures/sauvegardes.png" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Service Cloud</h5>
@@ -171,13 +142,12 @@ Simplifiez votre quotidien. Boostez votre productivité
             <span>✔ Restauration rapide en cas de perte de données</span>
             <br><b>Avec nous, vos informations professionnelles restent protégées et disponibles à tout moment. </b>
     </p>
-    <a href="#" class="btn " style="background-color: rgb(100,236,9);color: white;">Plus d'infos</a>
   </div>
   </div>
 </div>
         <!---->
-            <div class="col-12 col-md-6 col-lg-4" >
-	   <div class="card" style="width: 20rem; background-color: #09143A; color:white;">
+            <div class="col-12 col-md-6 col-lg-3" >
+	   <div class="card h-100" style="width: 20rem; background-color:#a0c9f4a7;color:#333333;">
             <img src="Pictures/services bureatique.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Service de Bureautique</h5>
@@ -191,14 +161,13 @@ Simplifiez votre quotidien. Boostez votre productivité
 Nous mettons à votre disposition des outils modernes pour valoriser vos présentations et vos supports de communication.
 .
                 </p>
-                <a href="#" class="btn " style="background-color: rgb(100,236,9);color: white;">Plus d'infos</a>
             </div>
 	  </div>
             </div>
 	</div>
-<div class="row mt-3">
-	<div class="col-12 col-md-6 col-lg-4">
-     	<div class="card" style="width: 20rem;background-color:#09143A; color:white;">
+<div class="row mt-3 d-flex justify-content-center">
+	<div class="col-12 col-md-6 col-lg-3">
+     	<div class="card h-100" style="width: 20rem; background-color:#a0c9f4a7;color:#333333;">
             <img src="Pictures/bureautique.jpeg" class="card-img-top " alt="...">
             <div class="card-body">
                 <h5 class="card-title">Formation Informatique</h5>
@@ -210,12 +179,11 @@ Nous mettons à votre disposition des outils modernes pour valoriser vos présen
                     <span>✔ Ateliers pratiques adaptés à votre niveau</span>
                     <br><b>Un suivi personnalisé est assuré afin de garantir une progression efficace.</b>
                 </p>
-                <a href="#" class="btn" style="background-color: rgb(100,236,9);color: white;">Plus d'infos</a>
             </div>
 	</div>
     </div>
-   <div class="col-12 col-md-6 col-lg-4">
-    <div class="card" style="width: 20rem; background-color: #09143A; color:white;">
+   <div class="col-12 col-md-6 col-lg-3">
+    <div class="card h-100" style="width: 20rem; background-color:#a0c9f4a7;color:#333333;">
         <img src="Pictures/cyberSecurite.png" class="card-img-fluid object-fit-fill"  alt="not found">
         <div class="card-body">
             <h5 class="card-title">🔒 Cybersécurité & Protection des Données</h5>
@@ -226,13 +194,12 @@ Nous mettons à votre disposition des outils modernes pour valoriser vos présen
                 <span>✔ Sensibilisation et conseils en bonnes pratiques numériques</span><br>
                 <b>Nous veillons à renforcer votre sécurité pour travailler en toute confiance.</b>
             </p>
-            <a href="#" class="btn" style="background-color: rgb(100,236,9);color: white;">Plus d'infos</a>
         </div>
     </div>
 	</div>
     
-    <div class="col-12 col-md-6 col-lg-4" >
-            <div class="card" style="width: 20rem;background-color: #09143A; color:white;">
+    <div class="col-12 col-md-6 col-lg-3" >
+            <div class="card h-100" style="width: 20rem; background-color:#a0c9f4a7;color:#333333;">
                 <img src="Pictures/data-analysis.jpeg" class="card-img-fluid " alt="...">
                 <div class="card-body">
                     <h5 class="card-title">🔍 Analyse de Données</h5>
@@ -242,15 +209,14 @@ Nous mettons à votre disposition des outils modernes pour valoriser vos présen
                         🚀 Nos prestations incluent :
                         Collecte et organisation des données : centralisation et structuration de vos informations.
                     </p>
-                    <a href="#" class="btn" style="background-color: rgb(100,236,9);color: white;">Plus d'infos</a>
                 </div>
             </div>
         </div><!--fin de la col-->
         </div>
 
-	<div class="row g-2 d-flex flex-grow-1 mt-3">
-        <div class="col-12 col-md-6 col-lg-4" >
-            <div class="card" style="width: 20rem;background-color: #09143A; color:white;">
+	<div class="row g-2 d-flex flex-grow-1 mt-3 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3" >
+            <div class="card h-100" style="width: 20rem; background-color:#a0c9f4a7;color:#333333;">
                 <img src="Pictures/programming.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Programmation</h5>
@@ -259,20 +225,18 @@ Nous mettons à votre disposition des outils modernes pour valoriser vos présen
                         Créer un site internet est une expression de sérieux dans votre activité, entreprise.
                         Des applications sur mesure pour booster vos performances.
                     </p>
-                    <a href="#" class="btn" style="background-color: rgb(100,236,9);color: white;">Plus d'infos</a>
                 </div>
             </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4" >
-            <div class="col card" style="width: 20rem;background-color: #09143A; color: white">
+        <div class="col-12 col-md-6 col-lg-3" >
+            <div class="col card h-100" style="width: 20rem; background-color:#a0c9f4a7;color:#333333;">
                 <img src="Pictures/developpement web.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"> Developement web</h5>
                     <p class="card-text">
                         Offrez une identité visuelle moderne et impactante à votre site. avec nous automatisez vos tâches quotidiennes  à un prix abordable
                     </p>
-                    <a href="#" class="btn" style="background-color: rgb(100,236,9);color: white;">Plus d'infos</a>
                 </div>
             </div>
         </div>
@@ -298,7 +262,7 @@ Nous mettons à votre disposition des outils modernes pour valoriser vos présen
                                 <img src="" alt="">
                             </div>
                             <h2 class="card-title">Cloud</h2>
-                            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor itaque ducimus repellat ad et sequi molestiae? Quas cum, 
+                            <p class="lead" style="font-family: 'Montserrat', sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor itaque ducimus repellat ad et sequi molestiae? Quas cum, 
                             </p>
                             <button class="btn btn-warning ">Lire plus</button>
                         </div>
@@ -349,10 +313,10 @@ Nous mettons à votre disposition des outils modernes pour valoriser vos présen
     <!--Fin section de projet-->
     <section>
         <div class="container  w-50">
-        <div class="row">
+        <div class="row mt-3">
             <div class="col   text-dark text-center ">
                     <h2><b>Nos membre</b></h2>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam labore ab vel voluptatem aliquid mollitia facere dolore odit modi aliquam blanditiis assumenda,
+                    <span>Des experts passionnés à votre service pour des solution performantes et fiables</span>
             </div> 
         </div>
         </div>
